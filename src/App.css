@@ -1,0 +1,101 @@
+/* NavBar */
+.header{
+    position: sticky;
+    top: 0;
+    min-height: 80px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    background-color:#2ECC71  ;
+}
+/* .logo actualizar cuando cambiemos por Img logo*/
+.logo{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    padding-left: 40px;
+}
+.header-links{
+    display: flex;
+}
+.header-links ul {
+    display: inline-block;
+}
+.header-links ul li{
+    list-style: none;
+    font-size: 18px;
+}
+/* Me costo un egg entender lo del <a> beneath */
+.header-links ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 0px 20px;
+}
+.header-links ul li a:hover{
+    color: #fffc3c;
+}
+/* CartWidget / cart icon NavBar */
+.fa-shopping-cart{
+    font-size: 25px;
+
+}
+
+/* itemsListContainer */
+.itemsListContainer{
+    width: 80%;
+    margin: 0 auto;
+    /* cambiar el color del background */
+    background-color: #E7ECE9;
+}
+.titulos{
+    text-align: center;
+    font-size: 35px;
+    /* cambiar el color del titulo */
+    color: #196F3D ;
+}
+/* ItemCount */
+
+.counter_container{
+    text-align: center;
+}
+.counter_container p {
+    font-size: 40px;
+}
+.counter_container button {
+    font-size: 20px;
+    padding: 5px;
+    margin: 3px;
+    color: #fff;
+    background-color:#000;
+}
+
+/* Item.js */
+.Item-container{
+    color:#196F3D;
+    width: 30%;
+    margin: 5px;
+    font-size: 20px;
+    text-align: center;
+    border: 2px dotted red;
+    margin-top: 5px;
+    display: inline-block;
+    
+/* Cambiar toda esta cosa horrible */
+}
+
+/* itemsDetailContainer */
+.items-Detail-Container{
+    color:#196F3D;
+    margin: 5px;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 15px;
+   
+}
+.img-item{
+    width: 100%;
+}
