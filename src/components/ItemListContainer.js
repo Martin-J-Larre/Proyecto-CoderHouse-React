@@ -1,24 +1,27 @@
-import { useEffect, useState } from 'react';
-import { productos } from './productos';
-import ItemList from './ItemList';
+import { useEffect, useState } from "react";
+import { productos } from "./productos";
+import ItemList from "./ItemList";
 
 const ItemListContainer = () => {
-    
-    const [products, setProducts] = useState([]);
+  const onAdd = (producto) => {
+    console.log("agregar un producto", producto);
+  };
 
-    useEffect(() => {
-        new Promise((resolve, reject) => {
-            setTimeout(() => resolve(productos), 2000)
-        }).then(data => setProducts(data))
-    }, []);
+  const [products, setProducts] = useState([]);
 
-    console.log("data = ************** ", products);
+  useEffect(() => {
+    new Promise((resolve, reject) => {
+      setTimeout(() => resolve(productos), 2000);
+    }).then((data) => setProducts(data));
+  }, []);
 
-    return (
-        <div className="itemsListContainer">
-          <ItemList products ={products}/>
-        </div>   
-    );
-}
+  console.log("data = ************** ", products);
+
+  return (
+    <div className="itemsListContainer">
+      <ItemList products={products} onAdd={onAdd} />
+    </div>
+  );
+};
 
 export default ItemListContainer;
